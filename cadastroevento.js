@@ -1,10 +1,11 @@
-let dataEvento = '25'
+let dataEvento = new Date ("01/28/2022")
+let dataHoje = new Date()
 
-if(dataEvento >= 25) {
-    console.log("data do evento correta, podemos cadastrar") 
+if(dataEvento > dataHoje) {
+    console.log("Evento válido")
 } else {
-    console.log("data do evento inválida, não podemos casdastrar")
-} 
+    console.log("Evento inválido")
+}    
 
 let idadeParticipante = '18'
 
@@ -12,6 +13,12 @@ if(idadeParticipante >= 18) {
     console.log("idade do participante aceitável,podemos cadastrar")
 } else {
     console.log("idade do participante inválida para cadastro")
+}
+
+let listaParticipantes = ['Robson', 'Rodrigo', 'Glauco', 'João']
+
+for(let contador =0; contador < listaParticipantes.length; contador ++) {
+    console.log(listaParticipantes[contador])
 }
 
 let palestrantes = '10'
